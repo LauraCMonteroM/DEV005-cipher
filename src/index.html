@@ -12,15 +12,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
   </head>
   <body>
-    <img src="img\fondo3.jpg">
+    <img src="img/fondo1.png"/>
        <h1>Only You</h1>
         <p>Aquí podras enviar un mensaje en clave para esa persona especial</p>
         <h2>SIN QUE NADIE MÁS SE ENTERE</h2>
-    <div id="mensajeacifrar">
-      <textarea name="textarea" rows="10" cols="50">Escribe tu mensaje a cifrar</textarea>
-      <input type="number" id="cifraroffset" name="quantity" min="1">
-      <button id="cifrar" name="cifrar">Cifrar</button>
-    </div>  
+    <div id="cajasdetxt">
+      <div id="mensajeacifrar">
+        <textarea name="textarea" rows="10" cols="50">Escribe tu mensaje a cifrar</textarea>
+        <input type="number" id="cifraroffset" name="quantity" min="1">
+        <button id="cifrar" name="cifra">Cifrar</button>
+        <div id="rsltdcfrd"></div>
+      </div>
+      <div id="mensajeadcifrar">
+        <textarea name="textarea" rows="10" cols="50">Escribe tu mensaje a descifrar</textarea>
+        <input type="number" id="dcifraroffset" name="quantity" min="1">
+        <button id="dcifrar" name="cifra">Descifrar</button>
+        <div id="rsltddcfrd"></div>
+      </div> 
+  </div>
     <script src="index.js" type="module"></script>
   </body>
 </html>
