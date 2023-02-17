@@ -43,10 +43,9 @@ textarea
 {
     position: relative;
     font-family: 'Mulish', sans-serif;
-    margin: 50px;
     border-radius: 10px;
     padding: 10px 10px 10px 10px;
-    margin-left: 346px;
+    margin-left: 369px;
     text-decoration: purple;
 }
 
@@ -77,73 +76,87 @@ textarea
 {
     position: relative;
     display: block;
-    margin-left: 527px;
-    margin-top:-13px;
-    width: 30px;
+    margin-left: 530px;
+    margin-top: -13px;
+    width: 60px;
 }
 
 #cifrar
 {
     position: relative;
     background-color: purple;
-   color: white;
-   font-family: 'Mulish', sans-serif;
-   font-size: 15px; 
-   width: 80px;
-   height: 30px;
-   border: none;
-   border-radius: 10px;
-   margin-top: 30px;
-   margin-left: 298px;
-   text-align: center;
-   padding: 5px 5px 5px 5px;
+    color: white;
+    font-family: 'Mulish', sans-serif;
+    font-size: 15px;
+    width: 80px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 372px;
+    text-align: center;
+    padding: 5px 5px 5px 5px;
 }
 
 #rsltdcfrd
 {
     position: relative;
     background-color: rgba(214, 137, 229, 0.733);
-    width: 387px;
+    width: 373px;
     height: 180px;
     border-radius: 10px;
     margin-top: 38px;
-    margin-left: 344px;
+    margin-left: 370px;
     padding-left: 10px;
 }
 #dcifraroffset
 {
     position: relative;
     display: block;
-    margin-top:-13px;
-    margin-left: 523px;
-    width: 30px;
+    margin-top: -13px;
+    margin-left: 530px;
+    width: 60px;
 }
 
 #dcifrar
 {
     position: relative;
     background-color: purple;
-   color: white;
-   font-family: 'Mulish', sans-serif;
-   font-size: 15px; 
-   width: 80px;
-   height: 30px;
-   border: none;
-   border-radius: 10px;
-   margin-top: 30px;
-   margin-left: 290px;
-   text-align: center;
-   padding: 5px 5px 5px 5px;
+    color: white;
+    font-family: 'Mulish', sans-serif;
+    font-size: 15px;
+    width: 80px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 368px;
+    text-align: center;
+    padding: 5px 5px 5px 5px;
 }
 
 #rsltddcfrd
 {
     position: relative;
     background-color: rgba(214, 137, 229, 0.733);
-    width: 387px;
+    width: 378px;
     height: 180px;
     border-radius: 10px;
     margin-top: 38px;
-    margin-left: 346px;
+    margin-left: 371px;
     padding-left: 10px;
+}
+
+#right
+{
+    font-size: 15px;
+    margin-left: 357px;
+    margin-bottom: 20px;
+}
+
+#left
+{
+    font-size: 15px;
+    margin-left: 357px;
+    margin-bottom: 20px; 
 }
