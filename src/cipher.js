@@ -1,16 +1,23 @@
 const cipher = {
-  // Cifrado método encode
-      encode: function(offset, string)
+    // Cifrado
+    encode: function (string, offset)
+    {
+      let resultado = "";
+      for (let letra = 0; letra < string.length; letra++)
       {
-          return
+        let codigoAscii = string.charCodeAt(letra)
+        let codigoCifrado;
+        if (codigoAscii >= 65 && codigoAscii <=90)
+          {
+            codigoCifrado = ((codigoAscii + offset - 65) % 26 ) + 65;
+          }
+        else {
+          codigoAscii = codigoCifrado;
+        }
+        resultado += string.fromCharCode(codigoCifrado);
       }
-  //Descifrado método decode
-      decode: function(offset, string)
-      {
-          return
-      }
-};
-
-//buscar fucniones puras
-
-export default cipher;
+      return resultado;
+    }        
+}    
+  
+  
