@@ -47,7 +47,6 @@ textarea
     padding: 10px 10px 10px 10px;
     margin-left: 369px;
     text-decoration: purple;
-    text-transform: uppercase;
 }
 
 #cajasdetxt 
@@ -109,6 +108,8 @@ textarea
     margin-top: 38px;
     margin-left: 370px;
     padding-left: 10px;
+    padding-top: 10px;
+    font-size: 15px;
 }
 #dcifraroffset
 {
