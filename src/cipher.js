@@ -1,7 +1,11 @@
 const cipher = {
   // Cifrado
   encode: function (offset, texto) {
-    const newOffset = parseInt(offset)
+    if (!offset || !texto) {
+      throw new TypeError();
+    }
+
+    const newOffset = parseInt(offset);
     let resultado1 = "";
     for (let i = 0; i < texto.length; i++) {
       const textoMayus = texto.toUpperCase();
@@ -16,10 +20,11 @@ const cipher = {
   decode: function (offset, texto) {
     const realOffset = parseInt(offset);
     let resultado2 = "";
-    for (let letra = 0; letra < texto.length; letra++) {
+    const textoCif = texto.toUpperCase();
+    for (let letra = 0; letra < textoCif.length; letra++) {
       let codigoAscii1 = texto.charCodeAt(letra);
       if (codigoAscii1 >= 65 && codigoAscii1 <= 90) {
-        codigoAscii1 = ((codigoAscii1 - 65 - realOffset) % 26 + 26) % 26 + 65;
+        codigoAscii1 = ((codigoAscii1 - realOffset + 65) % 26) + 65;
       }
       resultado2 += String.fromCharCode(codigoAscii1);
     }
